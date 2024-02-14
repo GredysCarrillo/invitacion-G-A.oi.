@@ -1,5 +1,5 @@
 // CONTADOR
-const targetDate = new Date("2024-03-30T07:00:00").getTime();
+const targetDate = new Date("2024-06-29T07:00:00").getTime();
 const countdownDisplay = document.getElementById("countdown");
 
 const countdown = setInterval(() => {
