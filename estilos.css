@@ -1,0 +1,232 @@
+:root {
+    --background-color: #f4f4f4;
+    --accent-darker: #003817;
+    --accent-dark: #026842;
+    --accent-normal: #009d71;
+    --accent-light: #5ccda7;
+    --accent-lighter: #98ffe0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+   /* font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    */
+ 
+}
+
+html {
+    /* 16px = 1rem */
+    font-size: 1.3rem;
+}
+
+img {
+    width: 90%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+body {
+    background-color: var(--background-color);
+    max-width: 1000px;
+    margin: auto;
+
+         
+  
+        font-family: "Satisfy", cursive;
+        font-weight: 400;
+        font-style: normal;
+    
+            
+
+
+    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("fotos/fondo-flores.jpg");
+    background-size: cover;
+    background-attachment: fixed; */
+}
+
+main,
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: 3rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0.5rem;
+    color: var(--accent-normal);
+    font-family: "Satisfy", cursive;
+}
+
+div,
+section {
+    display: flex;
+    flex-direction: column;
+    /* flex: 1; */
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 90%;
+
+    /* outline: 1px solid red; */
+}
+
+#audio {
+    display: none;
+}
+
+#audio-player {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem;
+    border-top: 1px solid var(--accent-normal);
+}
+
+.previous,
+.next,
+.play {
+    display: inline-block;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.play {
+    background-color: var(--accent-light);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.date .display {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.countdown-container {
+    /* padding: 1rem; */
+    height: 22rem;
+    width: 100%;
+
+    background-image: url("fotos/cuenta-regresiva.jpg");
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-end; */
+    justify-content: flex-end;
+}
+
+#countdown {
+    /* color: var(--background-color); */
+    margin-bottom: 1.5rem;
+    font-size: xx-large;
+}
+
+.fancy-font {
+    font-family: "Satisfy", cursive;
+}
+
+.display > span:not(.text-feature) {
+    border-top: 1px solid var(--accent-light);
+    border-bottom: 1px solid var(--accent-light);
+    padding: 1rem;
+}
+
+.icon-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-grow: 1;
+}
+
+.little-icon {
+    padding: 0.15rem;
+    height: 1.2rem;
+    width: auto;
+}
+
+.icon {
+    width: 100px;
+    height: auto;
+    /* filter: invert(); */
+}
+
+.button {
+    display: block;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-color: var(--accent-normal);
+    border-radius: 0.75rem;
+    color: white;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    background-color: var(--accent-light);
+}
+
+.text-feature {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--accent-normal);
+}
+
+.horizontal-display {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0.5rem;
+    text-align: center;
+    /* outline: 1px solid yellow; */
+}
+
+div.horizontal-display div {
+
+    max-width: 8rem;
+    /* outline: 1px solid red; */
+    /* max-width: 11ch; */
+    /* height: 21rem;
+    max-width: 142px; */
+}
+
+div.horizontal-display div img {
+    height: auto;
+    width: 10ch;
+}
+
+div.horizontal-display div h3 {
+    color: black;
+}
+
+.flores {
+    min-height: 275px;
+    min-height: 200px;
+    width: 100%;
+    background-position: center;
+    background-image: url("fotos/flores.png");
+    background-repeat: no-repeat;
+    object-fit: contain;
+}
