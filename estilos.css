@@ -1,11 +1,12 @@
 :root {
     --background-color: #f4f4f4;
-    --accent-darker: #003817;
-    --accent-dark: #026842;
-    --accent-normal: #009d71;
-    --accent-light: #5ccda7;
-    --accent-lighter: #98ffe0;
+    --accent-darker: #c4951f;
+    --accent-dark: #c4951f;
+    --accent-normal: #c4951f;
+    --accent-light: #c4951f;
+    --accent-lighter: #c4951f;
 }
+
 
 * {
     margin: 0;
@@ -21,11 +22,11 @@
 
 html {
     /* 16px = 1rem */
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 img {
-    width: 90%;
+    width: 100%;
     height: auto;
     border-radius: 0.5rem;
 }
@@ -34,20 +35,11 @@ body {
     background-color: var(--background-color);
     max-width: 1000px;
     margin: auto;
-
-         
   
         font-family: "Satisfy", cursive;
         font-weight: 400;
-        font-style: normal;
+        font-style: normal;     
     
-            
-
-
-    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("fotos/fondo-flores.jpg");
-    background-size: cover;
-    background-attachment: fixed; */
 }
 
 main,
@@ -64,9 +56,11 @@ h1,
 h2,
 h3,
 h4 {
-    margin: 0.5rem;
+    margin: 0.1rem;
     color: var(--accent-normal);
     font-family: "Satisfy", cursive;
+    font-size: 35px;
+    
 }
 
 div,
@@ -78,7 +72,7 @@ section {
     align-items: center;
     gap: 1rem;
     width: 90%;
-
+    
     /* outline: 1px solid red; */
 }
 
@@ -91,15 +85,15 @@ section {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
     padding: 1rem;
     border-top: 1px solid var(--accent-normal);
+    
 }
 
 .previous,
 .next,
 .play {
-    display: inline-block;
+    display: flex;
     height: 1.5rem;
     width: 1.5rem;
 }
@@ -117,19 +111,15 @@ section {
     align-items: center;
 }
 
-.countdown-container {
-    /* padding: 1rem; */
+.countdown-container { 
     height: 22rem;
     width: 100%;
-
     background-image: url("fotos/2.jpg");
     background-size: contain;
     background-position: bottom;
     background-repeat: no-repeat;
-
     display: flex;
     flex-direction: column;
-    /* align-items: flex-end; */
     justify-content: flex-end;
 }
 
@@ -150,7 +140,7 @@ section {
 }
 
 .icon-wrapper {
-    display: flex;
+    
     flex-direction: row;
     justify-content: center;
     gap: 0.5rem;
@@ -165,8 +155,7 @@ section {
 
 .icon {
     width: 100px;
-    height: auto;
-    /* filter: invert(); */
+    height: auto;  /*tamaño novio*/
 }
 
 .button {
@@ -188,7 +177,7 @@ section {
 .text-feature {
     font-size: 1.5rem;
     font-weight: bold;
-    color: var(--accent-normal);
+    color: var(--accent-normal); 
 }
 
 .horizontal-display {
@@ -197,7 +186,6 @@ section {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-
     padding: 0.5rem;
     text-align: center;
     /* outline: 1px solid yellow; */
@@ -205,16 +193,13 @@ section {
 
 div.horizontal-display div {
 
-    max-width: 8rem;
-    /* outline: 1px solid red; */
-    /* max-width: 11ch; */
-    /* height: 21rem;
-    max-width: 142px; */
+    max-width: 9rem;
+   
 }
 
-div.horizontal-display div img {
-    height: auto;
-    width: 10ch;
+div.horizontal-display div img {  /*iconos*/
+    height: 150px;
+    width: 130px;
 }
 
 div.horizontal-display div h3 {
@@ -230,3 +215,6 @@ div.horizontal-display div h3 {
     background-repeat: no-repeat;
     object-fit: contain;
 }
+
+
+  
