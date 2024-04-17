@@ -1,4 +1,15 @@
 // Verificar si el dispositivo está en modo oscuro
+// Función para activar el modo claro
+function activarModoClaro() {
+    document.body.classList.remove('modo-oscuro');
+  }
+  
+  // Función para activar el modo oscuro
+  function activarModoOscuro() {
+    document.body.classList.add('modo-oscuro');
+  }
+  
+
 function ajustarEstilos() {
     const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
   

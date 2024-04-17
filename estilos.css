@@ -1,3 +1,16 @@
+/* Estilos para el modo claro */
+body {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  /* Estilos para el modo oscuro */
+  body.modo-oscuro {
+    background-color: #333333;
+    color: #ffffff;
+  }
+  
+
 :root {
     --background-color: #f4f4f4;
     --accent-darker: #c4951f;
