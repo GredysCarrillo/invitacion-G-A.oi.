@@ -1,15 +1,9 @@
-// Verificar si el navegador es el predeterminado de Samsung
-function isSamsungBrowser() {
-    var userAgent = navigator.userAgent;
-    return /SamsungBrowser/i.test(userAgent);
-  }
+// Verificar si el dispositivo está en modo oscuro
+function ajustarEstilos() {
+    const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
   
-  // Función para ajustar los estilos según el navegador
-  function ajustarEstilos() {
-    if (isSamsungBrowser()) {
-      // Ajustar los estilos para evitar el modo oscuro
-      // Por ejemplo, puedes sobrescribir los estilos específicos
-      // que pueden causar problemas en el modo oscuro
+    if (isDarkMode) {
+      // Si el dispositivo está en modo oscuro, ajustar los estilos
       document.body.style.backgroundColor = '#ffffff'; // Fondo blanco
       document.body.style.color = '#000000'; // Texto negro
     }
